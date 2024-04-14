@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TGame</string>
+    <string name="score">Score</string>
+    <string name="player_1_0">Player 1: 0</string>
+    <string name="player_2_0">Player 2: 0</string>
+    <string name="turn">Turn:</string>
+    <string name="reset_game">Reset Game</string>
+    <string name="report_bug">Report Bug</string>
+    <string name="feedback">Feedback</string>
+    <string name="single_player">Single Player</string>
+    <string name="multiplayer">MultiPlayer</string>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/forestback"
+    android:alpha="8"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MultiPlayerActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:text="@string/score"
+    android:textSize="10sp"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/box"
+        android:background="@color/green"
+        android:id="@+id/scoreBoard"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="50dp"
+            android:text="@string/player_1_0"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:id="@+id/player1Score"
+            android:layout_marginStart="40dp"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="60dp"
+            android:text="@string/player_2_0"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:id="@+id/player2Score"
+            android:layout_marginStart="15dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/scoreBoard"
+        android:id="@+id/turnNotifier"
+        android:text="@string/turn"
+        android:textSize="9dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="102dp"
+        android:id="@+id/box"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:layout_height="102dp"
+        >
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="35dp"
+                android:background="@color/black" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+
+
+                android:background="@color/black" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+
+            android:layout_marginTop="65dp"
+            android:background="@color/black" />
+
+    </RelativeLayout>
+
+
+
+    <GridLayout
+        android:id="@+id/boxes"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:layout_centerInParent="true"
+        android:columnCount="3"
+        android:rowCount="3">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/box1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/box2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/box3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/box4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/box5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/box6"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/box7"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/box8"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/box9"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/boxes"
+        android:layout_marginTop="6dp"
+        android:layout_centerInParent="true"
+        android:textSize="8sp"
+        android:text="@string/reset_game"
+        android:id="@+id/btnReset"
+        android:layout_height="30dp"/>
+
+
+</RelativeLayout>

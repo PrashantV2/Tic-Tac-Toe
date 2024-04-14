@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackBugActivity">
+
+    <EditText
+        android:layout_width="121dp"
+        android:layout_height="93dp"
+        android:id="@+id/box"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/box"
+        android:id="@+id/btnSubmit"
+        android:textSize="9sp"
+        android:layout_centerInParent="true"
+        android:layout_height="35dp"/>
+
+</RelativeLayout>

@@ -14,7 +14,7 @@ Installation
 
     bash
 
-git clone https://github.com/prashantv2/tic-tac-toe.git
+git clone https://github.com/prashantv2/Tic-Tac-Toe.git
 
 Open the project in Android Studio.
 Connect your Android Wear device or use an emulator.

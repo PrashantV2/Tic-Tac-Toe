@@ -9,11 +9,6 @@ Features
     Simple Interface: Easy-to-use interface optimized for small screens of Android Wear devices.
     Gameplay History: Keep track of previous games and scores.
 Installation
-
-    Clone the repository to your local machine.
-
-    bash
-
 git clone https://github.com/prashantv2/Tic-Tac-Toe.git
 
 Open the project in Android Studio.
